@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ForEach</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <script>
+        let a = "hello";
+        console.log(a.length) //5
+        console.log(a.toUpperCase())
+        let b = "john";
+        console.log(b.toLowerCase())
+
+        console.log(a.charAt(1)) // e
+        console.log(a.charCodeAt(1)) // Ascii character return
+
+        console.log(a.concat(b))  // hellojohn
+        console.log(a.startsWith('h'))  //true
+        console.log(a.endsWith('o'))   //true
+        // string to array conversion
+        let c = a.split('')  // in the bracket based on double quotes and single quotes it will recognize to split character or string
+        console.log(c)    // ['h','e','l','l','o']
+
+        console.log(a.substring(1,3))  //in hello --> el   (startPosion,endPosition)
+        console.log(a.substr(1,3))  // in hello  --> ell    (startPostion,length(howmanyWordsYouWant))
+       let d= "   hi   ";
+       console.log(d);    // "    hi    "
+        console.log(d.trim())  //hi
+        console.log(d.trimStart())
+        console.log(d.trimEnd())
+
+        console.log(a.slice(0,2))  // in hello --> he
+        console.log(a.indexOf('l',2))  // in hello 2    i.e (char/string, position(to start search))
+        // above one extract first appearance of the character/string
+        a="hello echo"
+        console.log(a.lastIndexOf('c',0))  //doubt
+        //it will return negative(-1) value when posion is start before first appearance
+        //above will return 
+
+    </script>
+    
+</body>
+</html>
